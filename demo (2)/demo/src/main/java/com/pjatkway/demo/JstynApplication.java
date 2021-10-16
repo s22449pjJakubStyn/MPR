@@ -10,4 +10,5 @@ public class JstynApplication {
 		SpringApplication.run(JstynApplication.class, args);
 	}
 
+
 }
