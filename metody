@@ -1,0 +1,29 @@
+public void addIngredient(Sandwich sandwich, Ingredient ingredient) {
+        if(sandwich.getIngredients()!= null) {
+            sandwich.getIngredients().add(ingredient);
+        }
+    }
+
+    private void changeName(Sandwich sandwich) {
+        if(sandwich.getName() !=null) {
+            sandwich.setName(sandwich.getName()+"ABC");
+        }
+    }
+
+    private void changePrice(Sandwich sandwich) {
+        if(sandwich.getBasePrice() !=0) {
+            sandwich.setBasePrice(sandwich.getBasePrice()+2);
+        }
+    }
+
+    private void changeCalories(Sandwich sandwich) {
+        if(sandwich.getBaseCalories() !=0) {
+            sandwich.setBaseCalories(sandwich.getBaseCalories()+100);
+        }
+    }
+
+    private void changeSize(Sandwich sandwich, SandwichSize sandwichSize) {
+        if(sandwich.getSize() !=SandwichSize.BIG) {
+            sandwich.setSize(SandwichSize.BIG);
+        }
+    }
